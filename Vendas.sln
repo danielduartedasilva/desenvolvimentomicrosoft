@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendasConsole", "VendasConsole\VendasConsole.csproj", "{BFF7880C-C6A3-4E1C-8E4A-CA22B7E1346D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VendasConsole", "VendasConsole\VendasConsole.csproj", "{BFF7880C-C6A3-4E1C-8E4A-CA22B7E1346D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoDados", "BancoDados\BancoDados.csproj", "{C91E1D47-979D-4ED4-A3C1-9FCDCEFB45A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VendasWPF", "VendasWPF\VendasWPF.csproj", "{D9D652AC-13E0-4136-8006-0F19FB1FC3C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendasWeb", "VendasWeb\VendasWeb.csproj", "{2FCCA787-A252-479C-B577-2CDE3477730D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{BFF7880C-C6A3-4E1C-8E4A-CA22B7E1346D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFF7880C-C6A3-4E1C-8E4A-CA22B7E1346D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFF7880C-C6A3-4E1C-8E4A-CA22B7E1346D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C91E1D47-979D-4ED4-A3C1-9FCDCEFB45A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C91E1D47-979D-4ED4-A3C1-9FCDCEFB45A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C91E1D47-979D-4ED4-A3C1-9FCDCEFB45A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C91E1D47-979D-4ED4-A3C1-9FCDCEFB45A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9D652AC-13E0-4136-8006-0F19FB1FC3C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9D652AC-13E0-4136-8006-0F19FB1FC3C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9D652AC-13E0-4136-8006-0F19FB1FC3C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9D652AC-13E0-4136-8006-0F19FB1FC3C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FCCA787-A252-479C-B577-2CDE3477730D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FCCA787-A252-479C-B577-2CDE3477730D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FCCA787-A252-479C-B577-2CDE3477730D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FCCA787-A252-479C-B577-2CDE3477730D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

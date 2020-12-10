@@ -1,0 +1,45 @@
+﻿@*Tecnologia da página - Razor*@
+@model Produto
+
+    
+<form asp-action="Cadastrar" asp-controller="Produto" method="post" enctype="multipart/form-data">
+    @*-------------------------------------form da ação ao botão, asp não é do html e sim da tecnologia que estamos utilizando, enctype="multipart/form-data vai permitir que na requisição que for criada que sejam enviaados dados de texto e informações do arquivo de imagem selecionado*@
+    <fieldset>
+        <legend>Cadastrar Produto</legend>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>@*------------------------------------------------------------------------------------------------------asp-validation-summary só é aceito dentro da div para poder receber mensagens*@
+        <div class="form-group">
+            <label asp-for="Nome">Nome:</label>
+            <input class="form-control" asp-for="Nome" type="text" placeholder="Nome do produto" />@*asp-for foi usado no lugar de name="Nome" e for="Nome"*@
+            <span class="text-danger" asp-validation-for="Nome"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Descricao">Descrição:</label>
+            <input class="form-control" asp-for="Descricao" type="text" placeholder="Descrição do produto" />
+            <span class="text-danger" asp-validation-for="Descricao"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Preco">Preço:</label>
+            <input class="form-control" asp-for="Preco" type="text" placeholder="Preço do produto" />
+            <span class="text-danger" asp-validation-for="Preco"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Quantidade">Quantidade:</label>
+            <input class="form-control" asp-for="Quantidade" type="text" placeholder="Quantidade do produto" />
+            <span class="text-danger" asp-validation-for="Quantidade"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Imagem">Imagem:</label>
+            <input class="form-control-file" type="file" name="file" />
+        </div>
+        
+        <div class="form-group">
+            <label asp-for="CategoriaId">Categoria:</label>
+            <select class="form-control" asp-items="@ViewBag.Categorias" asp-for="CategoriaId">@*asp-items--------------------------------------preenche automaticamente os itens da lista*@
+
+                        <option> -- SELECIONE -- </option>
+
+                    </select>
+        </div>
+        <input class="btn btn-info" type="submit" value="Cadastrar" />@*--------------------------------------------------------------------------------------------------------Quando a gente clicar no botão cadastrar, serei direcionado a action Cadastrar acima do controller do produto, criando uma requisição com o método post*@
+    </fieldset>
+</form>
